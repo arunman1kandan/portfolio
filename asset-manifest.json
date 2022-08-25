@@ -1,23 +1,27 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ab0b8091.css",
-    "main.js": "/portfolio/static/js/main.a615bddd.js",
+    "main.css": "/portfolio/static/css/main.5dd16e2c.css",
+    "main.js": "/portfolio/static/js/main.3bd9431f.js",
+    "static/media/Group 2.jpg": "/portfolio/static/media/Group 2.5075813c2511059e5961.jpg",
+    "static/media/musicapp.png": "/portfolio/static/media/musicapp.f1c301f91904ef5f9249.png",
     "static/media/Resume.pdf": "/portfolio/static/media/Resume.12c06197233dcb3e86d1.pdf",
     "static/media/P1.png": "/portfolio/static/media/P1.95c6b09630a1dac94a52.png",
     "static/media/glassesimoji.png": "/portfolio/static/media/glassesimoji.a08bdab12e8eb56a6874.png",
     "static/media/Gumela Regular.otf": "/portfolio/static/media/Gumela Regular.0ae83c6988a536716eb4.otf",
+    "static/media/grammered.jpg": "/portfolio/static/media/grammered.aa8ee6a8aae776c67d5c.jpg",
     "static/media/thumbup.png": "/portfolio/static/media/thumbup.e06790ba656f0397cbe5.png",
     "static/media/humble.png": "/portfolio/static/media/humble.c8b32b53675e68978981.png",
     "static/media/heartemoji.png": "/portfolio/static/media/heartemoji.26b1b6ed5e0e44083b28.png",
+    "static/media/wave.png": "/portfolio/static/media/wave.fdfef4069ad90f610990.png",
     "static/media/crown.png": "/portfolio/static/media/crown.dbe416beae9b49b842ab.png",
     "static/media/V2.png": "/portfolio/static/media/V2.28db5bfd58081dd1df1b.png",
     "static/media/glasses.png": "/portfolio/static/media/glasses.71d7c1b0ff0b870a9d7d.png",
     "index.html": "/portfolio/index.html",
-    "main.ab0b8091.css.map": "/portfolio/static/css/main.ab0b8091.css.map",
-    "main.a615bddd.js.map": "/portfolio/static/js/main.a615bddd.js.map"
+    "main.5dd16e2c.css.map": "/portfolio/static/css/main.5dd16e2c.css.map",
+    "main.3bd9431f.js.map": "/portfolio/static/js/main.3bd9431f.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab0b8091.css",
-    "static/js/main.a615bddd.js"
+    "static/css/main.5dd16e2c.css",
+    "static/js/main.3bd9431f.js"
   ]
 }
