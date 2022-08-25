@@ -1,4 +1,5 @@
 import React from 'react'
+import Toggler from '../Toggler/Toggler'
 import "./Navbar.css"
 
 export const Navbar = () => {
@@ -6,7 +7,7 @@ export const Navbar = () => {
     <div className="navWrapper">
         <div className="navLeft">
             <div className="name">Arun Manikandan</div>
-            <span>Toggle Night mode</span>
+            <Toggler />
         </div>
         <div className="navRight">
             <div className="navList">
@@ -14,6 +15,7 @@ export const Navbar = () => {
                     <li>Home</li>
                     <li>Services</li>
                     <li>Experience</li>
+                    <li>Works</li>
                     <li>Portfolio</li>
                 </ul>
             </div>

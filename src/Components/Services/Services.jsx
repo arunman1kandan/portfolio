@@ -5,9 +5,11 @@ import Heart from "../../Images/heartemoji.png"
 import Divine from "../../Images/humble.png"
 import Card from '../Card/Card'
 import Resume from "./Resume.pdf"
+import {motion} from "framer-motion"
 
 
 const Services = () => {
+    const transition = {duration : 1, type:"spring"}
   return (
     <div className="servicesWrapper">
         <div className="servicesLeft">
@@ -22,26 +24,26 @@ const Services = () => {
         </div>
 
         <div className="servicesRight">
-            <div style={{left : "14rem"}}>
+            <motion.div initial={{left:"25%"}} whileInView={{left : "14rem"}} transition={transition} style={{left : "14rem"}}>
                 <Card
                 emoji={Heart}
                 pText={"Design"}
                 sText={"Figma, PhotoShop, CorelDraw, Adobe After Effects"}/>
-            </div>
+            </motion.div>
 
-            <div style={{top : "12rem" , left : "-4rem"}}>
+            <motion.div initial={{left:"-20rem"}} whileInView={{left:"-4rem"}} transition={transition} style={{top : "12rem" , left : "-4rem"}}>
                 <Card
                 emoji={Glass}
                 pText={"Developer"}
                 sText={"HTML, CSS, Js, MERN-Stack"} / >
-            </div>
+            </motion.div>
 
-            <div style={{top : "19rem" , left : "12rem"}}>
+            <motion.div initial={{left:"-10rem"}} whileInView={{left : "12rem"}} transition={transition} style={{top : "19rem" , left : "12rem"}}>
                 <Card 
                 emoji={Divine}
                 pText={"Software Dev"}
                 sText={"Python, C++, C, Java"}/>
-            </div>
+            </motion.div>
             <div className="blur servicesBlur2" style={{background: "var(--purple)"}}></div>
         </div>
     </div>

@@ -119,3 +119,9 @@
     top: -18%;
     left: 46%;
 }
+
+
+.introIcons>img:hover
+{
+    transform: scale(0.6);
+}

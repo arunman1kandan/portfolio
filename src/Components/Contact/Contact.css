@@ -1,0 +1,58 @@
+.contact-form
+{
+    margin-top: 8rem;
+    display: flex;
+    gap: 15rem;
+    height: 80vh;
+    padding: 0px 32px 0px 32px;
+    position: relative;
+}
+
+.contactRight >form
+{
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.contactRight>form>textarea
+{
+    border: 2px solid var(--orange);
+    height: 100px;
+    width: 400px;
+    border-radius: 10px;
+    resize: none;
+    padding-left: 0.5rem;
+}
+.contactRight>form>input
+{
+    border: 2px solid var(--orange);
+    height: 40px;
+    width: 400px;
+    padding-left: 0.5rem;
+    border-radius: 10px;
+}
+
+.contactRight>form>textarea:focus
+{
+    transform: scale(1.1);
+    border: 1px solid var(--orange);
+    padding-top: 0.5rem;
+}
+
+.contactRight>form>input:focus
+{
+    transform: scale(1.1);
+    border: 1px solid var(--orange);
+}
+.buttonC
+{
+    width: 5rem;
+}
+
+.contactBlur2
+{
+    top: 1rem;
+    left: 28rem;
+}
