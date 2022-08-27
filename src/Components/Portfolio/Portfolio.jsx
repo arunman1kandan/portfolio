@@ -5,11 +5,15 @@ import Grammered from "../../Images/grammered.jpg"
 import ESSE from "../../Images/Group 2.jpg"
 import Music from "../../Images/musicapp.png"
 import "swiper/css"
+import {themeContext} from "../../ThemeChanger"
+import {useContext} from "react"
 
 const Portfolio = () => {
-  return (
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
+    return (  
     <div className="portfolioWrapper">
-        <span>Recent Projects</span>
+        <span style={{color : darkMode? "white" : ""}}>Recent Projects</span>
         <span>Portfolio</span>
 
         {/*Slider*/}

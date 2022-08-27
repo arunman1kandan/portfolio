@@ -6,12 +6,16 @@ import Amazon from "../../Images/amazon.png"
 import Shopify from "../../Images/Shopify.png"
 import Facebook from "../../Images/Facebook.png"
 import {motion} from "framer-motion"
+import {themeContext} from "../../ThemeChanger"
+import {useContext} from "react"
 
 const Works = () => {
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
   return (
     <div className="works">
         <div className="servicesLeft">
-            <span>Got Clients from all these</span>
+            <span style={{color : darkMode? "white" : ""}}>Got Clients from all these</span>
             <span>Companies!</span>
             <span>
             </span>
@@ -25,24 +29,24 @@ const Works = () => {
             whileInView={{rotate:0}}
             viewport={{margin:"-40px"}}
             transition={{duration:3.5 , type:"spring"}}
-            className="mainCircle">
-                <div className="secondCircle">
+            className="mainCircle" >
+                <div className="secondCircle" style={{border : darkMode? "2.5px solid var(--orange)" : ""}}>
                     <img src={Fiverr} alt="Fiverr" />
                 </div>
-                <div className="secondCircle">
+                <div className="secondCircle" style={{border : darkMode? "2.5px solid var(--orange)" : ""}}>
                     <img src={UpWork} alt="UpWork" />
                 </div>
-                <div className="secondCircle">
+                <div className="secondCircle" style={{border : darkMode? "2.5px solid var(--orange)" : ""}}>
                     <img src={Amazon} alt="Amazon" />
                 </div>
-                <div className="secondCircle">
+                <div className="secondCircle" style={{border : darkMode? "2.5px solid var(--orange)" : ""}}>
                     <img src={Shopify} alt="Shopify" />
                 </div>
-                <div className="secondCircle">
+                <div className="secondCircle" style={{border : darkMode? "2.5px solid var(--orange)" : ""}}>
                     <img src={Facebook} alt="Facebook" />
                 </div>
             </motion.div>
-            <div className="backCircle blue"></div>
+            <div className="backCircle blue" ></div>
             <div className="backCircle yellow"></div>
         </div>
     </div>

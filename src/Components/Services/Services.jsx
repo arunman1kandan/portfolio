@@ -6,14 +6,18 @@ import Divine from "../../Images/humble.png"
 import Card from '../Card/Card'
 import Resume from "./Resume.pdf"
 import {motion} from "framer-motion"
+import {themeContext} from "../../ThemeChanger"
+import {useContext} from "react"
 
 
 const Services = () => {
+    const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
     const transition = {duration : 1, type:"spring"}
   return (
     <div className="servicesWrapper">
         <div className="servicesLeft">
-            <span>What do I </span>
+            <span style={{color : darkMode ? "white": " "}}>What do I </span>
             <span>DO?</span>
             <span>I am a software developer and a part-time full-stack web developer
             </span>

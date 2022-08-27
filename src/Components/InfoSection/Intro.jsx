@@ -11,17 +11,22 @@ import cool from "../../Images/glassesimoji.png"
 import Person from "../../Images/P1.png"
 import FloatingDiv from '../FloatingDiv/FloatingDiv'
 import {motion} from "framer-motion"
+import {themeContext} from "../../ThemeChanger"
+import {useContext} from "react"
 
 
 const Intro = () => {
+
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
 
   const transition = {duration : 2 , type:"spring"}
   return (
     <div className="introWrapper">
         <div className="introLeft">
-            <div className="introName">
-                <span>Hello There! I am</span>
-                <span>Arun Manikandan</span>
+            <div className="introName" >
+                <span style={{color : darkMode ? "white": " "}}>Hello There! I am</span>
+                <span >Arun Manikandan</span>
                 <span>FullStack MERN Developer with intermediate experience in web designing.<br/>Full-time programmer and software developer.
                 </span>
                 
@@ -39,7 +44,7 @@ const Intro = () => {
             <img src={Person} alt="GitHub" />
             <motion.img initial={{left : "-36%"}} whileInView={{left:"-24%"}} transition={transition} src={cool} alt="emoji1" />
             <motion.div initial={{top : "-4%" ,left: "74%"}} whileInView={{left:"68%"}} transition={transition} style={{top:"-4%" , left : "68%"}}>
-              <FloatingDiv image={Crown} txt1 = 'Web' txt2="Developer"/>
+              <FloatingDiv image={Crown} txt1 = 'Web' txt2="Developer" />
             </motion.div>
             <motion.div initial={{left:  "9rem", top:"18rem"}} whileInView={{left : "0rem"}} transition={transition} style={{top : "18rem" , left : "0rem"}}>
               <FloatingDiv image={Up} txt1 ="Software" txt2="Developer"/>

@@ -7,8 +7,8 @@ import  {UsethemeProvider}  from './ThemeChanger';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <UsethemeProvider>
-      <App />,
-  </UsethemeProvider>,
+      <App />
+  </UsethemeProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
