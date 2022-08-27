@@ -48,7 +48,8 @@ const Services = () => {
                 pText={"Software Dev"}
                 sText={"Python, C++, C, Java"}/>
             </motion.div>
-            <div className="blur servicesBlur2" style={{background: "var(--purple)" ,zIndex : darkMode? "auto" : ""}}></div>
+            <div className="blur servicesBlur2" style={{background: "var(--purple)" ,zIndex : darkMode? "auto" : "" , top:"0rem" , left : "25rem"}}></div>
+            <div className="blur servicesBlur2" style={{background: "#6EA0AA" ,zIndex : darkMode? "auto" : "" , top:"20rem" , left : "-35rem"}}></div>
         </div>
     </div>
   )

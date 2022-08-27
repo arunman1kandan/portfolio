@@ -22,7 +22,7 @@ const Works = () => {
             </span>
             <button className="gButton servicesButton">Hire ME</button>
             <div className="blur servicesBlur" style={{background : "#ABF1FF94" ,zIndex : darkMode? "auto" : "",left:"-20rem"}}></div>
-            <div className="blur servicesBlur" style={{background : "rgb(238 210 255)" ,zIndex : darkMode? "auto" : "",top : "05rem",left:"30rem"}}></div>
+            <div className="blur servicesBlur" style={{background : "rgb(238 210 255)" ,zIndex : darkMode? "auto" : "",top : "05rem",left:"36rem"}}></div>
         </div>
 
         <div className="worksRight">
@@ -31,7 +31,7 @@ const Works = () => {
             whileInView={{rotate:0}}
             viewport={{margin:"-40px"}}
             transition={{duration:3.5 , type:"spring"}}
-            className="mainCircle" >
+            className="mainCircle"style={{zIndex : darkMode? "1" : ""}} >
                 <div className="secondCircle" style={{border : darkMode? "2.5px solid var(--orange)" : ""}}>
                     <img src={Fiverr} alt="Fiverr" />
                 </div>
@@ -48,8 +48,8 @@ const Works = () => {
                     <img src={Facebook} alt="Facebook" />
                 </div>
             </motion.div>
-            <div className="backCircle blue" ></div>
-            <div className="backCircle yellow"></div>
+            <div className="backCircle blue" style={{zIndex : darkMode? "auto" : ""}}></div>
+            <div className="backCircle yellow" style={{zIndex : darkMode? "auto" : ""}}></div>
         </div>
     </div>
   )
