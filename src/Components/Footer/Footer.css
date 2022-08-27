@@ -25,3 +25,10 @@
     display: flex;
     gap:2rem;
 }
+
+@media screen and (max-width:480px) {
+    .footerContent
+    {
+        transform: scale(.6);
+    }
+}

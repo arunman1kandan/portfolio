@@ -34,7 +34,7 @@ const Contact = () => {
             </div>
         </div>
         <div className="contactRight">
-            <form ref={form} onSubmit={sendEmail}>
+            <form ref={form} onSubmit={sendEmail} className="form">
                 <input type="text" name="user_name" className='user_name' placeholder='Name'  required/>
                 <input type="email" name="user_email"  pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" className='user' placeholder='Email' required />
                 <textarea name="message" className='user' placeholder='Message' required/>

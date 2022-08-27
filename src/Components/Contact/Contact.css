@@ -56,3 +56,20 @@
     top: 1rem;
     left: 28rem;
 }
+
+@media screen and (max-width:480px) {
+
+    .contact-form
+    {
+        
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+    .form
+    {   
+        position: absolute;
+        left: -1rem;
+        transform: scale(.8);
+    }
+}

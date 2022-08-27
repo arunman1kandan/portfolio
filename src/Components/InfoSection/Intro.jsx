@@ -39,14 +39,14 @@ const Intro = () => {
             </div>
         </div>
         <div className="introRight">
-            <img src={V1} alt="GitHub" />
-            <img src={V2} alt="GitHub" />
-            <img src={Person} alt="GitHub" />
+            <img src={V1} alt="GitHub" className='person'/>
+            <img src={V2} alt="GitHub" className='person' />
+            <img src={Person} alt="GitHub" className='person'/>
             <motion.img initial={{left : "-36%"}} whileInView={{left:"-24%"}} transition={transition} src={cool} alt="emoji1" />
-            <motion.div initial={{top : "-4%" ,left: "74%"}} whileInView={{left:"68%"}} transition={transition} style={{top:"-4%" , left : "68%"}}>
+            <motion.div initial={{top : "-4%" ,left: "74%"}} whileInView={{left:"68%"}} transition={transition} style={{top:"-4%" , left : "68%"}} className="floatingDiv">
               <FloatingDiv image={Crown} txt1 = 'Web' txt2="Developer" />
             </motion.div>
-            <motion.div initial={{left:  "9rem", top:"18rem"}} whileInView={{left : "0rem"}} transition={transition} style={{top : "18rem" , left : "0rem"}}>
+            <motion.div initial={{left:  "9rem", top:"18rem"}} whileInView={{left : "0rem"}} transition={transition} style={{top : "18rem" , left : "0rem"}} className="floatingDiv">
               <FloatingDiv image={Up} txt1 ="Software" txt2="Developer"/>
             </motion.div>
 

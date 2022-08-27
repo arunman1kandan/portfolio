@@ -47,3 +47,26 @@
 {
     color: var(--orange);
 }
+
+@media screen and (max-width:480px) {
+    .experience
+    {
+        display: flex;
+        flex-direction: row;
+        gap: 2.5rem;
+        transform: scale(.8);
+    }
+    .acheivements:nth-of-type(3)
+    {
+        position: relative;
+        top:0.5rem;
+    }
+
+    .acheivements:nth-last-of-type(2)
+    {
+        position: relative;
+        left: -1rem;
+    }
+
+    
+}

@@ -96,3 +96,30 @@
     left: 5rem;
     top: 12rem;
 }
+
+@media screen and (max-width:480px) {
+    .works
+    {
+        flex-direction: column;
+        height: 55rem;
+        padding: 0;
+        gap: 5rem;
+    }
+
+    .worksRight
+    {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        transform: scale(0.7);    
+    }
+
+    .mainCircle
+    {
+        position: static;
+    }
+    .backCircle
+    {
+        left: 8rem !important;
+    }
+}

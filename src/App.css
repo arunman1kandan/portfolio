@@ -72,4 +72,8 @@ body
   {
     padding: 0.5rem 1rem;
   }
+  .blur
+  {
+    display: none;
+  }
 }
