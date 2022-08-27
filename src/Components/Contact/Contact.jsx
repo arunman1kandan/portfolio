@@ -30,7 +30,7 @@ const Contact = () => {
                 <span style={{color : darkMode? "white" : ""}}>Get in touch!</span>
                 <span>Contact Me</span>
 
-                <div className="blur contactBlur" style={{background : "#ABF1FF94" , left : "1rem" , top : "10rem"}}></div>
+                <div className="blur contactBlur" style={{zIndex : darkMode? "auto" : "",background : "#ABF1FF94" , left : "1rem" , top : "10rem"}}></div>
             </div>
         </div>
         <div className="contactRight">
@@ -40,7 +40,7 @@ const Contact = () => {
                 <textarea name="message" className='user' placeholder='Message' required/>
                 <button className="gButton buttonC">Submit</button>
                 <span>{done && "Thanks for contacting me!"}</span>
-                <div className="blur contactBlur2" style={{background : "var(--purple"}}></div>
+                <div className="blur contactBlur2" style={{zIndex : darkMode? "auto" : "",background : "var(--purple)" , left : "50rem"}}></div>
             </form>
         </div>
     </div>

@@ -50,8 +50,8 @@ const Intro = () => {
               <FloatingDiv image={Up} txt1 ="Software" txt2="Developer"/>
             </motion.div>
 
-            <div className='blur' style={{background : "rgb(238 210 255)"}}></div>
-            <div className='blur' style={{background : "#99e3f1" , top : "17rem" , width : "21rem" , height : "11rem" , left : "-9rem"}}></div>
+            <div className='blur' style={{background : "rgb(238 210 255)" , zIndex : darkMode? "auto" : ""}}></div>
+            <div className='blur' style={{background : "#99e3f1" ,zIndex : darkMode? "auto" : "" , top : "17rem" , width : "21rem" , height : "11rem" , left : "-9rem"}}></div>
         </div>
     </div>
   )

@@ -15,7 +15,7 @@ const Services = () => {
   const darkMode = theme.state.darkMode;
     const transition = {duration : 1, type:"spring"}
   return (
-    <div className="servicesWrapper">
+    <div className="servicesWrapper" id ="Services">
         <div className="servicesLeft">
             <span style={{color : darkMode ? "white": " "}}>What do I </span>
             <span>DO?</span>
@@ -48,7 +48,7 @@ const Services = () => {
                 pText={"Software Dev"}
                 sText={"Python, C++, C, Java"}/>
             </motion.div>
-            <div className="blur servicesBlur2" style={{background: "var(--purple)"}}></div>
+            <div className="blur servicesBlur2" style={{background: "var(--purple)" ,zIndex : darkMode? "auto" : ""}}></div>
         </div>
     </div>
   )
